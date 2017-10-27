@@ -64,7 +64,6 @@
 % draft mode.
 %
 \documentclass[journal]{IEEEtran}
-\usepackage{blindtext}
 \usepackage{graphicx}
 \usepackage{lipsum}
 
@@ -488,11 +487,8 @@ IEEEtran, journal, \LaTeX, paper, template.
 \IEEEpeerreviewmaketitle
 
 
-\section{Introduction}
-\blindtext
+\input{Introduction}
 
-\subsection{Subsection Heading Here}
-\blindtext
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
@@ -582,7 +578,7 @@ IEEEtran, journal, \LaTeX, paper, template.
 
 
 \section{Conclusion}
-\blindtext
+blah blah blah
 
 
 
@@ -648,7 +644,7 @@ The authors would like to thank...
 % (used to reserve space for the reference number labels box)
 
 \bibliography{references} 
-\bibliographystyle{IEEEtran} 
+\bibliographystyle{IEEEtran}
 
 % biography section
 % 
