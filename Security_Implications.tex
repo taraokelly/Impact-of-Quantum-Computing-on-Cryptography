@@ -7,19 +7,12 @@ Does not have to have a QC but could be relying on a service provided by another
 blah
 
 \subsection{Grover's Algorithm}
+Grover's Algorithm was formulated by Lov Grover in 1996. Harmful affects by the algorithm in question can be seen in symmetric encryption and hash functions, including the ever popular AES and the SHA family. It important to note that Grover's algorithm only decreases the security of these cryptographic methods; it does not break them.
+
+A classical computer can do a search with the speed of \(O(N)\) assuming we do not know if the search parameter exists in an unordered domain. Grover's algorithm suggests that the same search can be implemented in \(O(\sqrt{N}\)) time using quantum queries. Grover's acceleration from \(O(N)\) to \(O(\sqrt{N}\)) is not quite as calamitous as Shor's. However, indicates another significant quantum approach to cryptanalysis by exhaustively searching the key space of classical ciphers \cite{Quantum_Cryptanal}.
 
 
-
-Harmful affects can be seen in Symmetric Encryption.
-
-Searches.
-Classical comp. can do a search with the speed of \(O(N)\)
-
-Grover's algorithm suggests that is that can implement the same search in \(O(\sqrt{N}\)) time using quantum queries.
-
-Grover's acceleration from \(O(N)\) to \(O(\sqrt{N}\)) is not quite as calamitous as Shor's.
-
-Affects hashing (SHA-256 and SHA3-256 anyway), and AES.
+%Affects hashing (SHA-256 and SHA3-256 anyway), and AES.
 
 \subsection{Social Concerns}
 Hackers.
