@@ -1,16 +1,16 @@
 \section{Introduction}
-The exponential evolution and prosperity of technology has brought... RSA \& ECC v popular. Warn about the following being a basic review to understand the relevant points.
+The exponential evolution and prosperity of technology has brought... RSA \& ECC v popular. Warn about the following being a basic review to understand the relevant points. With benefits come repercussions.
 % Cryptography has been around for thousands of years. Nowadays, is at the heart of worldwide communication network.
 
 %\subsection{The Art of Encryption}
 \subsection{Introduction to Cryptography}
 Cryptography is a method of protecting data from people who are not authorized to see it. Encryption, a significant mechanism in cryptography, is achieved by transforming the plaintext into ciphertext, with the intent of rendering it meaningless to those who do not have the classified resources. With these resources, the ciphertext is usually transformed it back to it's original state, a process called decryption.
 
-Symmetric-key encryption utilizes the same key to both encrypt and decrypt, AES being the prevailing form. Symmetric encryption is more accomplished in achieving a faster outcome than that of asymmetric. Problematically, the sender and the receiver must hold the same key. How do they exchange keys digitally without another party eavesdropping? A typical solution would be to use asymmetric encryption to exchange symmetric keys.
+Symmetric-key encryption utilizes the same key to both encrypt and decrypt, Advanced Encryption Standard (AES) being the prevailing form. Symmetric encryption is more accomplished in achieving a faster outcome than that of asymmetric. Problematically, the sender and the receiver must hold the same key. How do they exchange keys digitally without another party eavesdropping? A typical solution would be to use asymmetric encryption to exchange symmetric keys.
 
 Asymmetric-key encryption (a.k.a. public-key cryptography) practices an encryption technique with two differing, mathematically linked keys. The first key being a public key and the corresponding key being a private key. As implied in it's name, the public key is to be publicized. The private key is to be kept secret. The public key can be used to encrypt data, whereas the homologous private key can be used to decrypt the data. An ideal public-key cryptographic algorithm should serve as a trapdoor function. A trapdoor function is a function that is easy to perform one way, but has a secret that is required to perform the inverse calculation efficiently. The objective is to decrease the probability that the secret could be identified as much as possible.
 
-So far, we have acknowledged AES, RSA and ECC; all can be adopted in pursual of a \textbf{confidential} message. Cryptography is also concerned with proving the \textbf{integrity}, \textbf{authenticity} and \textbf{non-repudiation} of a message e.g. MAC, Digital Signatures. Another method attempting the assurance of integrity could be by hash functions, e.g. SHA.
+So far, we have acknowledged AES, RSA and ECC; all can be adopted in pursual of a \textbf{confidential} message. Cryptography is also concerned with proving the \textbf{integrity}, \textbf{authenticity} and \textbf{non-repudiation} of a message e.g. Message Authentication Code (MAC), Digital Signatures. Another method attempting the assurance of integrity could be by hash functions, e.g. Secure Hash Algorithm (SHA).
 
 \subsection{Rivest Shamir Adleman}
  Rivest Shamir Adleman (RSA) was first publicized in 1978 by Ron Rivest, Adi Shamir and Leonard Adleman. The RSA algorithm is the most popular and  perhaps the best understood public key cryptography system. RSA's security derives from the difficulty of factoring two large integers and the expeditious multiplication to get these large numbers; it is a befitting example of the ``trapdoor" methodology. 
