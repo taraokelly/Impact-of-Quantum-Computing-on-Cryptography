@@ -1,8 +1,10 @@
 \section{Introduction}
-%The continuous growth in the industry of technology reaps many upsides. 
-Quantum computing algorithms have been found to solve certain complex problems abundantly faster than that of classical algorithms, benefiting various areas like machine learning \cite{Sec_Risk} and developing new drugs \cite{Q_Comp_Real}. 
+The continuous growth in the industry of technology reaps many upsides. 
+Yet the progression in one area, can lead to the retrogression of another.
+A prime example being the advancements in the field of quantum computing.
+Quantum algorithms have been found to solve certain complex problems abundantly faster than that of classical algorithms, benefiting various areas like machine learning \cite{Sec_Risk} and developing new drugs \cite{Q_Comp_Real}. 
 %However, crossing new boundaries can also create downsides. 
-However, these algorithms could also aid the devaluation of cryptographic systems in our digital entrenched world.
+However, some of these algorithms could also aid the devaluation of cryptographic systems in our digital entrenched world. The suggestion of the succeeding corruption of privacy is distressing, possibly catastrophic. 
 %RSA \& ECC v popular. Warn about the following being a basic review to understand the relevant points. With benefits come repercussions.
 % Cryptography has been around for thousands of years. Nowadays, is at the heart of worldwide communication network.
 
@@ -25,11 +27,12 @@ So far, we have acknowledged AES, RSA and ECC; all can be adopted in pursual of 
  Rivest Shamir Adleman was first publicized in 1978 by Ron Rivest, Adi Shamir and Leonard Adleman. The RSA algorithm is the most popular and  perhaps the best understood public key cryptography system. RSA's security derives from the difficulty of factoring two large integers and the expeditious multiplication to get these large numbers; it is a befitting example of the ``trapdoor" methodology. 
  
  Two prime numbers, \(p\) and \(q\), are generated. The values \(p\) and \(q\) are multiplied together to get the maximum value, \(n\). 
- %A number \(pub\) is selected, such that \(pub\) is not a factor of \((p - 1)\) and \((q - 1)\). Then \(priv\) is generated, such that \((priv * pub) mod (p - 1) * (q - 1) = 1\). 
- Born from these values are the numbers \(pub\) and \(priv\).
+ A number \(pub\) is selected, such that \(pub\) is not a factor of \((p - 1)\) and \((q - 1)\). %Then \(priv\) is generated, such that \((priv * pub) mod (p - 1) * (q - 1) = 1\) \cite{RSA_ECC}. 
+ %Born from these values are the numbers \(pub\) and \(priv\).
+ Born from these values is the number \(priv\).
  The public key \((pub,n)\) can be released, but the private key \((priv,p,q)\) must be kept confidential.
  %The message \(M\) is converted to an integer \(C\) by multiplying itself to the power of the public key, then employs a wrapping scheme to ensure \(C > 0\) and \(C < n\). The decryption is a similar process, the cipher \(C\) is converted to \(M\) by squaring itself to the power of the private key. A wrapping scheme is again implemented, ensuring \(M > 0\) and \(M < n\). 
- As long as you know the values \(p\) and \(q\), you can compute the corresponding private key from the public key, explaining how factoring relates to breaking RSA. Factoring the maximum number into its component primes allows you to compute someone's private key from the public key and decrypt their private messages.
+ As long as you know the values \(p\) and \(q\), you can compute the corresponding private key from \(pub\), explaining how factoring relates to breaking RSA. Factoring the maximum number into its component primes allows you to compute someone's private key from the public key and decrypt their private messages.
 
 \subsection{Elliptic Curve Cryptography}
 
