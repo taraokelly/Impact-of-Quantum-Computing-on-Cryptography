@@ -1,8 +1,8 @@
 \section{Introduction}
 The continuous growth in the industry of technology reaps many upsides. 
-Yet the progression in one area, can lead to the retrogression of another.
+Yet the progression in one area, can lead to retrogression in another.
 A prime example being the advancements in the field of quantum computing.
-Quantum algorithms have been found to solve certain complex problems abundantly faster than that of classical algorithms, benefiting various areas like machine learning \cite{Sec_Risk} and developing new drugs \cite{Q_Comp_Real}. 
+Quantum algorithms have been found to solve certain complex problems abundantly faster than that of classical algorithms, benefiting various areas like machine learning and the development of new drugs \cite{Q_Comp_Real}. 
 %However, crossing new boundaries can also create downsides. 
 However, some of these algorithms could also aid the devaluation of cryptographic systems in our digital entrenched world. The suggestion of the succeeding corruption of privacy is distressing, possibly catastrophic. 
 %RSA \& ECC v popular. Warn about the following being a basic review to understand the relevant points. With benefits come repercussions.
@@ -11,7 +11,7 @@ However, some of these algorithms could also aid the devaluation of cryptographi
 
 
 The following review is not meant to provide in-depth understanding quantum computing. Nor is it intended to be a thorough explanation of current cryptographic algorithms, but rather a basic understanding of their workings and where quantum algorithms compromise them.
-Subsequently, we will delve into viable post-quantum solutions proposed in attempts to conserve secure communications.
+Subsequently, we will recognize viable post-quantum solutions proposed in attempts to conserve secure communications.
 
 %\subsection{The Art of Encryption}
 \section{Introduction to Cryptography}
@@ -19,12 +19,12 @@ Cryptography is a method of protecting data from people who are not authorized t
 
 Symmetric-key encryption utilizes the same key to both encrypt and decrypt, Advanced Encryption Standard (AES) being the prevailing form. Symmetric encryption is more accomplished in achieving a faster outcome than that of asymmetric \cite{Understanding_Cryptog}. Problematically, the sender and the receiver must hold the same key. How do they exchange keys digitally without another party eavesdropping? A typical solution would be to use asymmetric encryption to exchange symmetric keys, a concept introduced by Whitfield Diffie and Martin E. Hellman in 1976 \cite{PKC}.
 
-Asymmetric-key encryption (a.k.a. public-key cryptography) practices an encryption technique with two differing, mathematically linked keys - e.g. Rivest Shamir Adleman (RSA), Elliptic Curve Cryptography (ECC). The first key being a public key and the corresponding key being a private key. As implied in it's name, the public key is to be publicized. The private key is to be kept secret. The public key can be used to encrypt data, whereas the homologous private key can be used to decrypt the data. As illustrated by Price, an ideal public-key cryptographic algorithm should serve as a trapdoor function \cite{Understanding_Cryptog}. A trapdoor function is a function that is easy to perform one way, but has a secret that is required to perform the inverse calculation efficiently. The objective is to decrease the probability that the secret could be identified as much as possible.
+Asymmetric-key encryption (a.k.a. public-key cryptography) practices an encryption technique with two differing, mathematically linked keys - e.g. Rivest Shamir Adleman (RSA), Elliptic Curve Cryptography (ECC). The first key being a public key and the corresponding key being a private key. As implied in their names, the public key is to be publicized and the private key is to be kept secret. The public key can be used to encrypt data, whereas the homologous private key can be used to decrypt the data. As illustrated by Price, an ideal public-key cryptographic algorithm should serve as a trapdoor function \cite{Understanding_Cryptog}. A trapdoor function is a function that is easy to perform one way, but has a secret that is required to perform the inverse calculation efficiently. The objective is to decrease the probability that the secret could be identified as much as possible.
 
 So far, we have acknowledged AES, RSA and ECC; all can be adopted in pursual of a confidential message. Cryptography is also concerned with proving the integrity, authenticity and non-repudiation of a message e.g. Message Authentication Code (MAC), Digital Signatures. Another method attempting the assurance of integrity could be by hash functions, e.g. Secure Hash Algorithm (SHA).
 
 \subsection{Rivest Shamir Adleman}
- Rivest Shamir Adleman was first publicized in 1978 by Ron Rivest, Adi Shamir and Leonard Adleman. The RSA algorithm is the most popular and  perhaps the best understood public key cryptography system. RSA's security derives from the difficulty of factoring two large integers and the expeditious multiplication to get these large numbers \cite{Easy_ECC}; it is a befitting example of the ``trapdoor" methodology. 
+ RSA was first publicized in 1978 by Ron Rivest, Adi Shamir and Leonard Adleman. The RSA algorithm is the most popular and  perhaps the best understood public key cryptography system. RSA's security derives from the difficulty of factoring two large integers and the expeditious multiplication to get these large numbers \cite{Easy_ECC}; it is a befitting example of the ``trapdoor" methodology. 
  
  Two prime numbers, \(p\) and \(q\), are generated. The values \(p\) and \(q\) are multiplied together to get the maximum value, \(n\). 
  A number \(pub\) is selected, such that \(pub\) is not a factor of \((p - 1)\) and \((q - 1)\). %Then \(priv\) is generated, such that \((priv * pub) mod (p - 1) * (q - 1) = 1\) \cite{RSA_ECC}. 
@@ -36,7 +36,7 @@ So far, we have acknowledged AES, RSA and ECC; all can be adopted in pursual of 
 
 \subsection{Elliptic Curve Cryptography}
 
-Although Elliptic Curve Cryptography was originally proposed in 1985 by by Neal Koblitz and Victor S. Miller, it was not widely utilized until the 21st century. It is not as widely understood as RSA, with it's complexity to blame. ECC allows the use of smaller keys than RSA to get the same levels of security. 
+Although ECC was originally proposed in 1985 by by Neal Koblitz and Victor S. Miller, it was not widely utilized until the 21st century. It is not as widely understood as RSA, with it's complexity to blame. ECC allows the use of smaller keys than RSA to get the same levels of security. 
 %Small keys are very beneficial nowadays, considering cryptography is often implemented on low powered devices, e.g. a mobile phone. While multiplying two prime numbers together is easier, when the prime numbers start to get very long, even just the multiplication step can take some time on a low powered device.
 
 ECC is based on the algebraic structure of elliptic curves over finite fields \cite{RSA_ECC}. ECC handles the following domain parameters: \((p,a,b,G,n,h)\). To briefly explain the parameters, \(p\) is the field that the graph is defined over, the variables \(a\) and \(b\) are values that define the curve, \(G\) is known as the generator point (a.k.a. base point), \(n\) is the prime order of G and \(h\) is the cofactor of the curve.
