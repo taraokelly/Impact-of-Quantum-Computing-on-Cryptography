@@ -9,7 +9,7 @@ With the arrival of quantum computing, one must acknowledge the security implica
 ## Word Count
 
 | Section | Heading | Count |
-| --- | --- | --- |
+|:---:|:---:|:---:|
 | I | INTRODUCTION | 148 |
 | II | Introduction to Cryptography | 346 |
 | II.A | Rivest Shamir Adleman | 190 |
