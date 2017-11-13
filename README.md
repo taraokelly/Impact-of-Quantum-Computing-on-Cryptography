@@ -10,14 +10,14 @@ With the arrival of quantum computing, one must acknowledge the security implica
 
 | Section | Heading | Count |
 |:---:|:---:|:---:|
-| I | INTRODUCTION | 148 |
+| I | INTRODUCTION | 145 |
 | II | Introduction to Cryptography | 346 |
 | II.A | Rivest Shamir Adleman | 190 |
 | II.B | Elliptic Curve Cryptography | 230 |
-| III | QUANTUM COMPUTING | 263 |
+| III | QUANTUM COMPUTING | 264 |
 | III.A | Shor’s Algorithm | 157 |
 | III.B | Grover’s Algorithm | 155 |
-| III.C | Security Implications | 425 |
-| III.D | Post-Quantum Cryptography | 280 |
+| III.C | Security Implications | 424 |
+| III.D | Post-Quantum Cryptography | 279 |
 | IV | CONCLUSION | 198 |
-| | **Total** | 2392 |
+| | **Total** | 2388 |
