@@ -19,4 +19,5 @@ With the arrival of quantum computing, one must acknowledge the security implica
 | III.B | Grover’s Algorithm | 155 |
 | III.C | Security Implications | 425 |
 | III.D | Post-Quantum Cryptography | 280 |
-| IV | CONCLUSION| 193 |
+| IV | CONCLUSION | 193 |
+| | **Total** | 2387 |
