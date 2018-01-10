@@ -21,3 +21,14 @@ With the arrival of quantum computing, one must acknowledge the security implica
 | III.D | Post-Quantum Cryptography | 279 |
 | IV | CONCLUSION | 198 |
 | | **Total** | 2391 |
+
+## Module Marking Structure
+
+| Assessment | Marks |
+|:---:|:---:|
+| Literature Review | 60% |
+| Presentation | 40% |
+
+-----
+
+__*Tara O'Kelly - G00322214@gmit.ie*__
